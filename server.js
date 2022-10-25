@@ -2,7 +2,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const connectDB = require("./db/connect");
 
-const cors = require("cors");
+// const cors = require("cors");
 // Cors
 // const corsOptions = {
 //   origin: process.env.ALLOWED_CLIENTS.split(","),
@@ -17,7 +17,7 @@ const cors = require("cors");
 //     "optionsSuccessStatus": 204
 //   }
 
-app.use(cors());
+// app.use(cors());
 
 const PORT = process.env.PORT || 3000;
 const app = require("./app");
