@@ -1,8 +1,14 @@
+const dotenv = require("dotenv");
+dotenv.config();
 const connectDB = require("./db/connect");
 const File = require("./models/fileModel");
 const fs = require("fs");
 
-connectDB();
+const DB = process.env.DATABASE.replace(
+  "<password>",
+  process.env.DATABASE_PASSWORD
+);
+connectDB(DB);
 
 // Get all records older than 24 hours
 async function fetchData() {
