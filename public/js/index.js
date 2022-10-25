@@ -15,9 +15,9 @@ const emailForm = document.querySelector("#emailForm");
 
 const toast = document.querySelector(".toast");
 
-const baseURL = "https://innshare.herokuapp.com";
-const uploadURL = `${baseURL}/api/files`;
-const emailURL = `${baseURL}/api/files/send`;
+const baseURL = "https://inshare-filesharingsys.herokuapp.com";
+const uploadURL = `${baseURL}/api/v1/files`;
+const emailURL = `${baseURL}/api/v1/files/send`;
 
 const maxAllowedSize = 100 * 1024 * 1024; //100mb
 
